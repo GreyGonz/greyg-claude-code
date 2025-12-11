@@ -6,5 +6,8 @@
     "name": "rubberband"
   },
   "repository": "https://github.com/GreyGonz/greyg-claude-code",
-  "license": "MIT"
+  "license": "MIT",
+  "commands": "./commands",
+  "agents": "./agents",
+  "mcpServers": "./.mcp.json"
 }
