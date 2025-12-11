@@ -61,6 +61,29 @@ My personal Claude Code configuration for productive web development. This plugi
 
 ## Installation
 
+### Prerequisites
+
+**For Supabase MCP Server:**
+
+The Supabase MCP server requires environment variables to authenticate. Set these up before installing:
+
+```bash
+# 1. Generate a personal access token at:
+# https://supabase.com/dashboard/account/tokens
+
+# 2. Find your project reference in your Supabase dashboard URL:
+# https://supabase.com/dashboard/project/[PROJECT_REF]
+
+# 3. Set environment variables (add to ~/.bashrc, ~/.zshrc, etc.):
+export SUPABASE_ACCESS_TOKEN="your-personal-access-token"
+export SUPABASE_PROJECT_REF="your-project-ref"
+
+# 4. Reload your shell or restart your terminal
+source ~/.bashrc  # or source ~/.zshrc
+```
+
+**Security Note:** Never commit these tokens to version control.
+
 ### From GitHub (Recommended)
 
 ```bash
@@ -69,6 +92,8 @@ My personal Claude Code configuration for productive web development. This plugi
 
 # Install plugin
 /plugin install edmunds-claude-code
+
+# Restart Claude Code to activate MCP servers
 ```
 
 ### From Local Clone (for development)
@@ -82,6 +107,8 @@ cd edmunds-claude-code
 
 # Install plugin
 /plugin install edmunds-claude-code
+
+# Restart Claude Code to activate MCP servers
 ```
 
 ## Best For

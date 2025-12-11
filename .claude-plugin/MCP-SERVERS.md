@@ -47,6 +47,22 @@ This plugin includes 3 pre-configured MCP servers that enhance Claude Code's cap
 - Data queries
 - Admin operations
 
+**Required Setup**:
+1. Generate a personal access token at https://supabase.com/dashboard/account/tokens
+2. Find your project reference in your Supabase project dashboard URL: `https://supabase.com/dashboard/project/[PROJECT_REF]`
+3. Set environment variables:
+   ```bash
+   export SUPABASE_ACCESS_TOKEN="your-personal-access-token"
+   export SUPABASE_PROJECT_REF="your-project-ref"
+   ```
+4. Add to your shell config file (`~/.bashrc`, `~/.zshrc`, etc.) to persist
+5. Restart Claude Code
+
+**Security Notes**:
+- Never commit access tokens to version control
+- The MCP server is scoped to a specific project via `--project-ref` flag
+- For read-only access, you can add `--read-only` flag to the args in `.mcp.json`
+
 ## Servers Not Included (Not Yet Available)
 
 The following servers were requested but don't have official MCP implementations yet:
