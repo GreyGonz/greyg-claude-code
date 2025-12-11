@@ -8,4 +8,5 @@
   "license": "MIT",
   "commands": "./.claude/commands",
   "agents": "./.claude/agents"
+  "mcpServers": "./.claude/mcp.json"
 }
