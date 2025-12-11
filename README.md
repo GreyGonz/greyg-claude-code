@@ -6,10 +6,10 @@ My personal Claude Code configuration for productive web development. This plugi
 
 ```bash
 # Step 1: Add the marketplace
-/plugin marketplace add edmund-io/edmunds-claude-code
+/plugin marketplace add GreyGonz/greyg-claude-code
 
 # Step 2: Install the plugin
-/plugin install edmunds-claude-code
+/plugin install greyg-claude-code
 ```
 
 ## What's Inside
