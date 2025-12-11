@@ -2,12 +2,12 @@
   "name": "greyg-claude-code",
   "owner": {
     "name": "rubberband",
-    "contact": "github.com/GreyGon"
+    "contact": "github.com/GreyGonz"
   },
   "description": "Curated Claude Code setup for productive development",
   "plugins": [
     {
-      "name": "greyg-claude-code",
+      "name": "greyg-claude-code-config",
       "source": "./",
       "description": "Personal Claude Code configuration with 14 productivity commands and 11 specialized AI agents for modern web development",
       "version": "1.0.0",
