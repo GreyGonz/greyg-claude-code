@@ -1,4 +1,4 @@
-# Edmund's Claude Code Setup
+# Rubberband's Claude Code Setup
 
 My personal Claude Code configuration for productive web development. This plugin provides **14 slash commands** and **11 specialized AI agents** to supercharge your development workflow.
 
