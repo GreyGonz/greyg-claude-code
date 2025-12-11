@@ -5,20 +5,6 @@
   "author": {
     "name": "rubberband"
   },
-  "license": "MIT",
-  "commands": "./.claude/commands",
-    "agents": [
-    "./.claude/agents/tech-stack-researcher.md",
-    "./.claude/agents/backend-architect.md",
-    "./.claude/agents/deep-research-agent.md",
-    "./.claude/agents/frontend-architect.md",
-    "./.claude/agents/learning-guide.md",
-    "./.claude/agents/performance-engineer.md",
-    "./.claude/agents/refactoring-expert.md",
-    "./.claude/agents/requirements-analyst.md",
-    "./.claude/agents/security-engineer.md",
-    "./.claude/agents/system-architect.md",
-    "./.claude/agents/technical-writer.md"
-  ],
-  "mcpServers": "./.claude/mcp.json"
+  "repository": "https://github.com/GreyGonz/greyg-claude-code",
+  "license": "MIT"
 }
