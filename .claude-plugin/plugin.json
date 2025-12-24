@@ -8,6 +8,18 @@
   "repository": "https://github.com/GreyGonz/greyg-claude-code",
   "license": "MIT",
   "commands": "./commands",
-  "agents": "./agents",
+  "agents": [
+    "./agents/backend-architect.md",
+    "./agents/deep-research-agent.md",
+    "./agents/frontend-architect.md",
+    "./agents/learning-guide.md",
+    "./agents/performance-engineer.md",
+    "./agents/refactoring-expert.md",
+    "./agents/requirements-analyst.md",
+    "./agents/security-engineer.md",
+    "./agents/system-architect.md",
+    "./agents/technical-writer.md",
+    "./agents/tech-stack-researcher.md"
+  ],
   "mcpServers": "./.mcp.json"
 }
