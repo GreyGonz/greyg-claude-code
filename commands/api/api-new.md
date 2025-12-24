@@ -1,9 +1,9 @@
 ---
-description: Create a new Next.js API route with validation, error handling, and TypeScript
+description: Create a new API endpoint with validation, error handling, and TypeScript for any framework
 model: claude-sonnet-4-5
 ---
 
-Create a new Next.js API route following modern best practices for solo developers.
+Create a new API endpoint following modern best practices for solo developers.
 
 ## Requirements
 
@@ -11,16 +11,33 @@ API Endpoint: $ARGUMENTS
 
 ## Implementation Guidelines
 
-### 1. **Next.js 15 App Router** (Recommended)
-Use Route Handlers in `app/api/` directory with TypeScript
+### 1. **Framework Detection**
+Detect the project's framework/runtime automatically or ask the user:
+- **Next.js** (App Router or Pages API)
+- **Express.js**
+- **Fastify**
+- **Hono**
+- **Deno** (Fresh, Oak, or native)
+- **Bun** (Elysia, Hono, or native)
+- **NestJS**
+- **tRPC**
+- **Other** (adapt patterns accordingly)
 
 ### 2. **Validation**
-- Use Zod for runtime type validation
+- **Recommended**: Zod for runtime type validation (framework-agnostic)
+- **Alternatives**:
+  - TypeBox (for Fastify/Elysia native schemas)
+  - Yup, Joi (if already in project)
+  - Framework-native validators (tRPC, NestJS class-validator)
 - Validate input early (before DB/API calls)
 - Return clear validation error messages
 
 ### 3. **Error Handling**
-- Global error handling with try/catch
+- Use framework-appropriate error handling patterns:
+  - Next.js: try/catch in route handlers
+  - Express/Fastify: Error middleware
+  - Hono/Elysia: Error handlers
+  - NestJS: Exception filters
 - Consistent error response format
 - Appropriate HTTP status codes
 - Never expose sensitive error details
@@ -31,10 +48,13 @@ Use Route Handlers in `app/api/` directory with TypeScript
 - No `any` types
 
 ### 5. **Security**
-- Input sanitization
+- Input sanitization (prevent XSS, SQL injection)
 - CORS configuration if needed
-- Rate limiting considerations
-- Authentication/authorization checks
+- Rate limiting (use existing middleware or recommend solution)
+- Authentication/authorization:
+  - Detect existing auth (NextAuth, Lucia, Clerk, Supabase Auth, etc.)
+  - Use framework-appropriate middleware/guards
+  - Validate tokens/sessions before handler execution
 
 ### 6. **Response Format**
 ```typescript
@@ -47,12 +67,16 @@ Use Route Handlers in `app/api/` directory with TypeScript
 
 ## Code Structure
 
-Create a complete API route with:
+Create a complete API endpoint with:
 
-1. **Route Handler File** - `app/api/[route]/route.ts`
+1. **Route Handler File** - Appropriate for the detected framework
+   - Next.js: `app/api/[route]/route.ts` or `pages/api/[route].ts`
+   - Express/Fastify: `routes/[route].ts` or `controllers/[route].ts`
+   - Hono/Elysia: `routes/[route].ts`
+   - Deno: Framework-specific structure
 2. **Validation Schema** - Zod schemas for request/response
 3. **Type Definitions** - Shared TypeScript types
-4. **Error Handler** - Centralized error handling
+4. **Error Handler** - Centralized error handling (middleware or utility)
 5. **Example Usage** - Client-side fetch example
 
 ## Best Practices to Follow
@@ -68,4 +92,11 @@ Create a complete API route with:
 - L No database queries without validation
 - L No inline business logic (extract to services)
 
-Generate production-ready code that I can immediately use in my Next.js project.
+## Execution Steps
+
+1. **Detect Framework**: Check package.json, config files, or ask the user
+2. **Analyze Project Structure**: Understand existing patterns and conventions
+3. **Generate Code**: Create endpoint following framework-specific patterns
+4. **Provide Integration Guide**: Show how to register/import the new endpoint
+
+Generate production-ready code that follows the project's existing patterns and can be immediately integrated.
