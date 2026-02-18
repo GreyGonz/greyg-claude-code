@@ -1,6 +1,6 @@
 # Rubberband's Claude Code Setup
 
-My personal Claude Code configuration for productive web development. This plugin provides **14 slash commands** and **11 specialized AI agents** to supercharge your development workflow.
+My personal Claude Code configuration for productive web development. This plugin provides **14 slash commands** and **12 specialized AI agents** to supercharge your development workflow.
 
 ## Quick Install
 
@@ -40,7 +40,10 @@ My personal Claude Code configuration for productive web development. This plugi
 - `/types-gen` - Generate TypeScript types
 - `/edge-function-new` - Create Edge Functions
 
-### 🤖 Specialized AI Agents (11)
+### 🤖 Specialized AI Agents (12)
+
+**Orchestration**
+- **orchestrator** - Decomposes complex multi-domain tasks, delegates to specialist agents, and synthesizes results
 
 **Architecture & Planning**
 - **tech-stack-researcher** - Technology choice recommendations with trade-offs
@@ -88,10 +91,10 @@ source ~/.bashrc  # or source ~/.zshrc
 
 ```bash
 # Add marketplace
-/plugin marketplace add edmund-io/edmunds-claude-code
+/plugin marketplace add GreyGonz/greyg-claude-code
 
 # Install plugin
-/plugin install edmunds-claude-code
+/plugin install greyg-claude-code
 
 # Restart Claude Code to activate MCP servers
 ```
@@ -99,14 +102,14 @@ source ~/.bashrc  # or source ~/.zshrc
 ### From Local Clone (for development)
 
 ```bash
-git clone https://github.com/edmund-io/edmunds-claude-code.git
-cd edmunds-claude-code
+git clone https://github.com/GreyGonz/greyg-claude-code.git
+cd greyg-claude-code
 
 # Add as local marketplace
-/plugin marketplace add /path/to/edmunds-claude-code
+/plugin marketplace add /path/to/greyg-claude-code
 
 # Install plugin
-/plugin install edmunds-claude-code
+/plugin install greyg-claude-code
 
 # Restart Claude Code to activate MCP servers
 ```

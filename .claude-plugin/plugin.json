@@ -1,7 +1,7 @@
 {
   "name": "greyg-claude-code-config",
   "version": "1.0.0",
-  "description": "Personal Claude Code setup with 14 productivity commands and 11 specialized AI agents for modern web development",
+  "description": "Personal Claude Code setup with 14 productivity commands and 12 specialized AI agents for modern web development",
   "author": {
     "name": "rubberband"
   },
@@ -9,6 +9,7 @@
   "license": "MIT",
   "commands": "./commands",
   "agents": [
+    "./agents/orchestrator.md",
     "./agents/backend-architect.md",
     "./agents/deep-research-agent.md",
     "./agents/frontend-architect.md",
