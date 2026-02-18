@@ -10,7 +10,7 @@
       "name": "greyg-claude-code-config",
       "source": "./",
       "description": "Personal Claude Code configuration with 14 productivity commands and 11 specialized AI agents for modern web development",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "rubberband",
         "email": "[email protected]"
