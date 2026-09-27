@@ -1,0 +1,3 @@
+- TypeScript `strict`, ESM, Node {{NODE_VERSION}}; sin `any`; tipos de retorno explícitos en exports.
+- Tests con {{TEST_RUNNER}}; `npx tsc --noEmit` antes de terminar.
+- Formato/lint con el prettier/eslint del proyecto (`node_modules/.bin`), nunca herramientas globales.

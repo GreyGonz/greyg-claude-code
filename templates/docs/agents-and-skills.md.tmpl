@@ -1,0 +1,21 @@
+# Subagentes y skills de Claude Code
+
+## Subagentes del proyecto (`.claude/agents/`)
+
+| Agente | Cuándo usarlo |
+|---|---|
+{{PROJECT_AGENT_ROWS}}
+
+Agentes globales del plugin: `system-architect` (diseño, opus), `security-engineer` (revisión de seguridad, opus), `frontend-architect`, `performance-engineer`, `refactoring-expert`, `tech-stack-researcher`, `requirements-analyst`, `technical-writer` (sonnet).
+
+## Skills (`.claude/skills/`)
+
+Instalados con `npx skills add <repo> -s <skill> -a claude-code --copy`; origen y hash en `skills-lock.json`. Actualizar con `/skills-sync`.
+
+| Skill | Origen | Para qué |
+|---|---|---|
+{{SKILL_ROWS}}
+
+## Flujo habitual
+
+`/plan-task` → implementar → `/test-fix` → `/review-diff` → `/commit`.

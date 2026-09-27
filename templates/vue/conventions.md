@@ -1,0 +1,3 @@
+- Vue 3.5 con `<script setup lang="ts">`; PrimeVue 4 (`@primeuix/themes`) + Tailwind 4 vía tokens, sin CSS ad hoc; estado en Pinia por dominio; llamadas HTTP solo en `src/api/*`.
+- `npx vue-tsc --noEmit` (o el build) debe pasar antes de terminar; tests con vitest.
+- Textos de la interfaz en {{UI_LANGUAGE}}.

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/bin/python:*)",
+      "Bash(.venv/bin/pytest:*)",
+      "Bash(.venv/bin/ruff:*)",
+      "Bash(.venv/bin/mypy:*)",
+      "Bash(uv run:*)"
+    ],
+    "ask": [
+      "Bash(.venv/bin/pip install:*)",
+      "Bash(uv sync:*)"
+    ]
+  }
+}

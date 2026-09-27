@@ -1,0 +1,4 @@
+- Java {{JAVA_VERSION}}, Quarkus {{QUARKUS_VERSION}}, Gradle wrapper (`./gradlew`); resources finos, lógica en servicios, persistencia con Panache.
+- Escrituras con `@Transactional`; DTOs de entrada con Bean Validation y `@Valid`; errores con `Response.status(...)` y mensaje claro.
+- Tests unitarios puros por defecto; `@QuarkusTest` solo cuando hace falta el contenedor; ejecutar acotado con `./gradlew test --tests 'pkg.Clase'`.
+- Nunca `./gradlew quarkusDev` desde Claude (proceso largo): indicar el comando al usuario.

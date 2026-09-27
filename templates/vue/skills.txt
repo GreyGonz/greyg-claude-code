@@ -1,0 +1,4 @@
+npx skills add hyf0/vue-skills -s vue-best-practices -a claude-code --copy
+npx skills add hyf0/vue-skills -s vue-debug-guides -a claude-code --copy
+npx skills add kindy/skills -s primevue -a claude-code --copy
+npx skills add anthropics/skills -s frontend-design -a claude-code --copy

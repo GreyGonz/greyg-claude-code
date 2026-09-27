@@ -1,0 +1,3 @@
+- Python ≥ 3.12, layout `src/`, entorno en `.venv/` (`.venv/bin/python`, `.venv/bin/pytest`); nunca `pip install` global.
+- Tests con pytest sin red (fakes/fixtures); todo módulo nuevo lleva su test.
+- Dependencias mínimas; las pesadas como extra opcional en `pyproject.toml` con import perezoso.

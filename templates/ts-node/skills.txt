@@ -1,0 +1,5 @@
+# No mandatory community skill for plain TypeScript; ~/.claude/rules/typescript.md covers conventions.
+# Optional, for module design:
+# npx skills add mattpocock/skills -s setup-ts-deep-modules -a claude-code --copy
+# PostgreSQL projects:
+# npx skills add supabase/agent-skills -s supabase-postgres-best-practices -a claude-code --copy

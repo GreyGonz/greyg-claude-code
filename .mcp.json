@@ -2,24 +2,6 @@
   "context7": {
     "command": "npx",
     "args": ["-y", "@upstash/context7-mcp"],
-    "description": "Access up-to-date documentation for any library"
-  },
-  "playwright": {
-    "command": "npx",
-    "args": ["@playwright/mcp@latest"],
-    "description": "Browser automation and web testing capabilities"
-  },
-  "supabase": {
-    "command": "npx",
-    "args": [
-      "-y",
-      "@supabase/mcp-server-supabase@latest",
-      "--project-ref",
-      "${SUPABASE_PROJECT_REF}"
-    ],
-    "env": {
-      "SUPABASE_ACCESS_TOKEN": "${SUPABASE_ACCESS_TOKEN}"
-    },
-    "description": "Supabase database operations and management"
+    "description": "Up-to-date documentation for any library"
   }
 }

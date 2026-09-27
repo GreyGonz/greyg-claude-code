@@ -1,0 +1,4 @@
+npx skills add samber/cc-skills-golang -s golang-code-style -a claude-code --copy
+npx skills add samber/cc-skills-golang -s golang-testing -a claude-code --copy
+npx skills add samber/cc-skills-golang -s golang-error-handling -a claude-code --copy
+# npx skills add samber/cc-skills-golang -s golang-design-patterns -a claude-code --copy

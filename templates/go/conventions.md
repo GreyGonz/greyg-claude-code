@@ -1,0 +1,3 @@
+- Go {{GO_VERSION}}, módulo `{{GO_MODULE}}`; `gofmt` y `go vet ./...` limpios; errores envueltos con `%w`.
+- Tests de tabla con `t.Run`; `go test ./...` antes de terminar; sin red en tests.
+- Sin dependencias nuevas sin justificarlas; preferir la biblioteca estándar.

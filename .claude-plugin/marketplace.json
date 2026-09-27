@@ -1,21 +1,20 @@
 {
   "name": "greyg-claude-code",
   "owner": {
-    "name": "rubberband",
+    "name": "GreyGonz",
     "contact": "github.com/GreyGonz"
   },
-  "description": "Curated Claude Code setup for productive development",
+  "description": "Curated, cost-aware Claude Code setup",
   "plugins": [
     {
       "name": "greyg-claude-code-config",
       "source": "./",
-      "description": "Personal Claude Code configuration with 14 productivity commands and 11 specialized AI agents for modern web development",
-      "version": "1.0.1",
+      "description": "Cost-aware Claude Code kit: 8 sonnet-first skills, 8 focused agents and per-stack project templates (Python, Vue/PrimeVue, Quarkus, Go, TypeScript).",
+      "version": "2.0.0",
       "author": {
-        "name": "rubberband",
-        "email": "[email protected]"
+        "name": "GreyGonz"
       },
-      "tags": ["productivity", "nextjs", "supabase", "typescript", "react", "development"]
+      "tags": ["productivity", "python", "vue", "quarkus", "go", "typescript", "cost-aware"]
     }
   ]
 }

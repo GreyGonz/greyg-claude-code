@@ -1,26 +1,23 @@
 {
   "name": "greyg-claude-code-config",
-  "version": "1.0.1",
-  "description": "Personal Claude Code setup with 14 productivity commands and 12 specialized AI agents for modern web development",
+  "version": "2.0.0",
+  "description": "Cost-aware Claude Code kit: 8 sonnet-first skills, 8 focused agents and per-stack project templates (Python, Vue/PrimeVue, Quarkus, Go, TypeScript).",
   "author": {
-    "name": "rubberband"
+    "name": "GreyGonz"
   },
   "repository": "https://github.com/GreyGonz/greyg-claude-code",
   "license": "MIT",
-  "commands": "./commands",
+  "keywords": ["productivity", "python", "vue", "quarkus", "go", "typescript", "cost-aware"],
+  "skills": "./skills",
   "agents": [
-    "./agents/orchestrator.md",
-    "./agents/backend-architect.md",
-    "./agents/deep-research-agent.md",
+    "./agents/system-architect.md",
+    "./agents/security-engineer.md",
     "./agents/frontend-architect.md",
-    "./agents/learning-guide.md",
+    "./agents/requirements-analyst.md",
+    "./agents/tech-stack-researcher.md",
     "./agents/performance-engineer.md",
     "./agents/refactoring-expert.md",
-    "./agents/requirements-analyst.md",
-    "./agents/security-engineer.md",
-    "./agents/system-architect.md",
-    "./agents/technical-writer.md",
-    "./agents/tech-stack-researcher.md"
+    "./agents/technical-writer.md"
   ],
   "mcpServers": "./.mcp.json"
 }

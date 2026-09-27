@@ -1,0 +1,4 @@
+npx skills add wshobson/agents -s python-testing-patterns -a claude-code --copy
+npx skills add wshobson/agents -s async-python-patterns -a claude-code --copy
+# only if FastAPI is a dependency:
+# npx skills add fastapi/fastapi -s fastapi -a claude-code --copy

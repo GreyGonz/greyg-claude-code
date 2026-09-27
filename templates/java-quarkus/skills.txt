@@ -1,0 +1,7 @@
+npx skills add affaan-m/ecc -s quarkus-patterns -a claude-code --copy
+npx skills add affaan-m/ecc -s quarkus-tdd -a claude-code --copy
+npx skills add affaan-m/ecc -s java-coding-standards -a claude-code --copy
+# security-sensitive APIs:
+# npx skills add affaan-m/ecc -s quarkus-security -a claude-code --copy
+# PostgreSQL projects:
+# npx skills add supabase/agent-skills -s supabase-postgres-best-practices -a claude-code --copy
